@@ -42,6 +42,7 @@ RestartSec=60
 WantedBy=multi-user.target
 ```
 # Example ambient2MQTT service-ambient.ini file
+The API and APPLICATION keys are random sample data. You have to create your own using the instructions listed above.
 ```
 [YourSiteName]
 AMBIENT_APPLICATION_KEY=700ae98fcce076756dff9d409a0ffd20
@@ -52,5 +53,5 @@ MQTT_HOST=mqtt.example.com
 MQTT_PORT=1883
 MQTT_USERNAME=
 MQTT_PASSWORD=
-MQTT_TOPIC=YOURSITENAME/sensor/weather/station1
+MQTT_TOPIC=YourSiteName/sensor/weather/station1
 ```
