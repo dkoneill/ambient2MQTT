@@ -1,0 +1,14 @@
+[Unit]
+Description=Ambient Weather API to MQTT service
+After=network.service
+Wants=network-online.target
+
+[Service]
+User=pi
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/ambient2MQTT/ambient2MQTT.py
+WorkingDirectory=/home/pi/ambient2MQTT
+Restart=always
+RestartSec=60
+[Install]
+WantedBy=multi-user.target
